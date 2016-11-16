@@ -1,0 +1,334 @@
+.wrap{
+    height: 100%;
+    /*overflow: hidden;*/
+}
+.wrap header{
+    height: 2.5rem;
+    background: aqua;
+    position: relative;
+    background: url(../images/bg1_03.png);
+}
+header .logo{
+    position: absolute;
+    left:50%;
+    top:50%;
+    width:3.7rem;
+    height:0.975rem;
+    margin-left:-1.85rem;
+    margin-top:-0.45rem;
+}
+header .back{
+    position: absolute;
+    left:0.2rem;
+    top:0.5rem;
+    width:2.325rem;
+    height:1.4rem;
+}
+
+header .back img{
+    width: 100%;
+}
+.wrap footer{
+    height: 2.2rem;
+}
+.banner{
+    width:16rem;
+    height:7.45rem;
+    position:relative;
+    overflow:hidden;
+}
+.banner ul{
+    position:absolute;
+    top:0;
+    left:0;
+    width:80rem;
+}
+.banner ul li{
+    float:left;
+    width:16rem;
+    height:6.675rem;
+}
+.banner ul li img{
+    width:100%;
+}
+.banner ol{
+    width:2.5rem;
+    margin-left:-1.25rem;
+    position:absolute;
+    bottom:0;
+    left:50%;
+}
+.banner ol li{
+    float:left;
+    width:0.25rem;
+    height:0.25rem;
+    background:#a9a9a9;
+    border-radius:50%;
+    margin:0 0.125rem;
+}
+.banner ol .on{
+    background:#ff4300;
+}
+.nav ul{
+    width:16rem;
+    height:8rem;
+}
+.nav ul li{
+    height:3.05rem;
+    width:2rem;
+    float:left ;
+    margin:0.9rem;
+
+}
+.nav ul li em{
+    display: block;
+    height:2rem;
+    width:2rem;
+    padding-bottom:0.2rem;
+
+}
+.nav ul li:nth-child(1) em{
+    background: url(../images/icon_04.png) no-repeat;
+    background-size: 100%;
+}
+.nav ul li:nth-child(2) em{
+    background: url(../images/icon_02.png) no-repeat;
+    background-size: 100%;
+}
+.nav ul li:nth-child(3) em{
+    background: url(../images/icon_06.png) no-repeat;
+    background-size: 100%;
+}
+.nav ul li:nth-child(4) em{
+    background: url(../images/icon_09.png) no-repeat;
+    background-size: 100%;
+}
+.nav ul li:nth-child(5) em{
+    background: url(../images/icon_14.png) no-repeat;
+    background-size: 100%;
+}
+.nav ul li:nth-child(6) em{
+    background: url(../images/icon_15.png) no-repeat;
+    background-size: 100%;
+}
+.nav ul li:nth-child(7) em{
+    background: url(../images/icon_16.png) no-repeat;
+    background-size: 100%;
+}
+.nav ul li:nth-child(8) em{
+    background: url(../images/icon_18.png) no-repeat;
+    background-size: 100%;
+}
+.nav ul li span{
+    text-align: center;
+    padding-left:0.2rem;
+}
+.hot{
+    color:#333;
+    font-size:0.9rem;
+    width:15rem;
+    margin:0 auto;
+    padding-bottom:0.525rem;
+    border-bottom:0.1rem solid #dcdcdc;
+}
+.hot .range{
+    background: url(../images/bar_03.png) no-repeat left top;
+    text-indent:0.45rem;
+}
+.content ul{
+    width:15rem;
+    margin:0 auto;
+}
+.content ul li{
+    height:3rem;
+    width:15rem;
+    margin-bottom:0.475rem;
+}
+.content li .l1,.l2,.l3,.l4,.l5,.l6,.l7,.l8,.l9,.l10{
+    height: 3rem;
+    width:1.5rem;
+    font-size:0.875rem;
+    color:#fff;
+    text-align: center;
+    line-height:3rem;
+}
+
+.content li .m img{
+    width:4.5rem;
+}
+.content ul li .r{
+    height:1.975rem;
+    width:8rem;
+    color:#999;
+    font-size:0.55rem;
+    background: #f4f4f4;
+    padding:0.7rem 0.5rem 0.325rem;
+}
+.content ul li .r .price{
+    color:#d51938;
+    padding-right:1.5rem;
+    background: url(../images/arrow_03.png) no-repeat right center;
+}
+.content ul li .r p{
+    line-height: 0.825rem;
+}
+.content ul li span{
+    text-decoration: line-through;
+}
+.content li .l1{
+    background: #e00202;
+}
+.content li .l2{
+    background: #ff4800;
+}
+.content li .l3{
+    background: #ff7300;
+}
+.content li .l4{
+    background: #ff9d00;
+}
+.content li .l5{
+    background: #ffa800;
+}
+.content li .l6{
+    background: #ffb400;
+}
+.content li .l7{
+    background: #ffba00;
+}
+.content li .l8{
+    background: #fcd000;
+}
+.content li .l9{
+    background: #ffd719;
+}
+.content li .l10{
+    background: #ffe152;
+}
+.more{
+    width:15rem;
+    margin:0 auto;
+    height:2rem;
+    background:#f5f5f5;
+    margin-bottom:1rem;
+}
+.more p{
+    color:#666;
+    font-size:0.55rem;
+    line-height: 2rem;
+    text-align: center;
+    background-size: 100%;
+    background: url(../images/arrow_03.png) no-repeat 14rem center;
+}
+.team{
+    width:15rem;
+    margin:0 auto;
+    margin-bottom:0.5rem;
+}
+.team img{
+    width:3.75rem;
+    height:8.825rem;
+}
+.team .r{
+    width:11.225rem;
+    height:8.825rem;
+    border-bottom:1px solid #eee;
+}
+.team .r .deta{
+    height:2.15rem;
+    width:11.225rem;
+    border-top:1px solid #eee;
+    border-right:1px solid #eee;
+}
+.team .r .deta ul li{
+    width:3.625rem;
+    text-align: center;
+    line-height: 2.175rem;
+    border-left:1px solid #eee;
+}
+.deta ul li a{
+    color:#999;
+    font-size:0.65rem;
+}
+.deta ul li .decor{
+    color:#d51942;
+}
+.mobile{
+    width:15rem;
+    margin:0 auto;
+}
+.mobile ul{
+    width:14.95rem;
+    height:3.95rem;
+    border:1px solid #eee;
+}
+.mobile ul li{
+    width:4.95rem;
+    height: 3rem;
+    vertical-align:middle;
+    text-align: center;
+    padding-top:0.95rem;
+}
+.mobile ul li img{
+    width:0.95rem;
+    height:1.1rem;
+    margin:0 auto;
+}
+.mobile ul li p{
+    margin-top:0.575rem;
+    color:#999;
+}
+.mobile ul .mid{
+    border-left:1px solid #eee;
+    border-right:1px solid #eee;
+}
+.login{
+    background: #f8f8f8;
+}
+.login ul{
+    width:15rem;
+    margin:0 auto;
+    height:2.2rem;
+
+}
+.login ul li{
+    height:2.2rem;
+}
+.login ul .mid{
+    margin-left:0.225rem;
+}
+.login ul .mid{
+    margin-left:1.175rem;
+}
+.login ul .r{
+    margin-right:0.15rem;
+}
+.login ul .r em{
+    width:0.425rem;
+    height:0.175rem;
+    display:inline-block;
+    background: url(../images/tranical_03.png) no-repeat right top;
+    background-size: 100%;
+}
+.login ul li a{
+    color:#333;
+    font-size:0.65rem;
+    line-height: 2.2rem;
+}
+.footer{
+    width:16rem;
+    height:8.575rem;
+    background: #e5e5e5;
+}
+.footer .p1{
+    text-align: center;
+    color:#333;
+    margin-top: 1.2rem;
+    font-size:0.675rem;
+}
+.footer .p2{
+    text-align: center;
+    color:#999;
+    margin-top: 0.825rem;
+    font-size:0.525rem;
+}

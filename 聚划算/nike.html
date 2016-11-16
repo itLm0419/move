@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <style>
+        .wrap{
+            height: 100%;
+            overflow: hidden;
+        }
+        .wrap header{
+            width:16rem;
+            height: 2.5rem;
+            background: aqua;
+            position: relative;
+            background: url(images/bg1_03.png);
+        }
+        header .title{
+            position: absolute;
+            left:50%;
+            top:50%;
+            font-size:0.775rem;
+            width:3.7rem;
+            height:0.975rem;
+            margin-left:-1.85rem;
+            margin-top:-0.45rem;
+        }
+
+        header .back{
+            position: absolute;
+            left:0.2rem;
+            top:0.5rem;
+            width:3.025rem;
+            height:0.15rem;
+        }
+        header .back img,header .sort img{
+            width: 100%;
+        }
+        .banner{
+            width:16rem;
+            height: 8rem;
+
+        }
+        .box{
+            width:16rem;
+            height: 8rem;
+            position: relative;
+        }
+        .banner img{
+            width:16rem;
+            height: 8rem;
+            background-size: 100%;
+        }
+        .box p{
+            width:16rem;
+            height:1rem;
+            position: absolute;
+            left:0;
+            bottom:0;
+            color:#fff;
+            text-indent:0.375rem;
+            line-height: 1rem;
+            font-size:0.6rem;
+            background: #110c11;
+            opacity:0.7;
+        }
+        .bingo{
+            width:3.125rem;
+            height:1.475rem;
+        }
+        .bingo img{
+            width:3.125rem;
+            height:1.475rem;
+            background-size: 100%;
+        }
+        .price{
+            font-size:1.075rem;
+            color:#c7223d;
+        }
+        .cont{
+            width:16rem;
+            height:2.2rem;
+            background:-webkit-linear-gradient(#fff,#fff,#fff,#ececec);
+            border-bottom:1px solid #b4b4b4;
+        }
+        .logo p{
+            margin-right:0.025rem;
+        }
+        .content ul{
+            width:16rem;
+        }
+        .content ul li{
+            height:3.975rem;
+            width:100%;
+            padding:0.5rem 1.2rem 0.5rem 0.5rem;
+            border-bottom:1px solid #dcdcdc;
+        }
+        .content ul li img{
+            width:100%;
+        }
+        .content ul li .egg,.buliding,.gas,.glass{
+            height: 3.6rem;
+            width:5.6rem;
+            padding:0.175rem;
+            border:1px solid #dcdcdc;
+        }
+        .detail{
+            width:7.575rem;
+            height: 100%;
+            padding-left:0.7rem;
+            padding-right:1.275rem;
+            font-size:0.65rem;
+            color:#000;
+        }
+        .detail p{
+            line-height: 1rem;
+        }
+        .detail div{
+            line-height: 1.2rem;
+        }
+        .content .show{
+            color:#c3213c;
+        }
+        .content .dec{
+            color:#999;
+            text-decoration: line-through;
+        }
+        .content .num{
+            color:#a5a5a5;
+        }
+        .content .detail .load{
+            width:2rem;
+            height: 0.75rem;
+        }
+        .content .detail .load img{
+            width:100%;
+        }
+    </style>
+    <script>
+        var rem=20;
+        ;(function(win,doc){
+            rem=20/320*doc.documentElement.clientWidth;
+            doc.documentElement.style.fontSize=rem+'px';
+            win.addEventListener('resize',function(){
+                rem=20/320*doc.documentElement.clientWidth;
+                doc.documentElement.style.fontSize=rem+'px';//横屏的时候
+            },false);
+        })(window,document);
+    </script>
+</head>
+
+<body>
+<div class="wrap">
+    <header>
+        <a href="javascript:;" class="back"><img src="images/back_03.png" alt=""></a>
+        <p class="title">Nike</p>
+    </header>
+
+    <section class="content">
+        <div class="box">
+            <div class="banner"><img src="images/bg1_07.png" alt=""></div>
+            <p>极致轻快 绝影一击</p>
+        </div>
+    </section>
+
+<section class="logo">
+    <div class="clearfix cont">
+        <div class="fl bingo"><img src="images/bingo_03.png" alt=""></div>
+        <p class="fr"><span class="price">3.0</span><span>全场折起</span></p>
+    </div>
+</section>
+    <section class="content">
+        <ul>
+            <li class="clearfix">
+                <div class="fl gas"><img src="images/shoes_03.png" alt="" ></div>
+                <div class="fl detail">
+                    <p>2013新款耐克男鞋正品耐克跑鞋nike专柜休闲男</p>
+                    <div><span class="show">¥2468.00</span><span class="dec">¥3304.00</span></div>
+                    <p class="num">1240人已购买</p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="fl glass"><img src="images/shoes_06.png" alt="" ></div>
+                <div class="fl detail">
+                    <p>耐克男鞋 专柜正品 耐克赤脚跑鞋NIKE运动鞋NIKE运动鞋</p>
+                    <div><span class="show">¥208.00</span><span class="dec">¥280.00</span></div>
+                    <p class="num">1240人已购买</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

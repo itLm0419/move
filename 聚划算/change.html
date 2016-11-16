@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <style>
+        .wrap{
+            height: 100%;
+            /*overflow: hidden;*/
+        }
+        .wrap header{
+            overflow: hidden;
+            width:16rem;
+            height: 2.5rem;
+            background: aqua;
+            position: relative;
+            background: url(images/bg1_03.png);
+        }
+        header .back{
+            position: absolute;
+            left:0.2rem;
+            top:0.5rem;
+            width:3.025rem;
+            height:0.15rem;
+        }
+        header .title{
+            position: absolute;
+            left:50%;
+            top:50%;
+            color:#999;
+            font-size:0.775rem;
+            width:3.7rem;
+            height:0.975rem;
+            margin-left:-1.85rem;
+            margin-top:-0.45rem;
+        }
+        header .back img{
+            width: 100%;
+        }
+        .pos{
+            position: relative;
+            height:2.225rem;
+            background: #f8f8f8;
+        }
+        .pos .icon{
+            height:0.65rem;
+            width:0.65rem;
+            position: absolute;
+            left:0.65rem;
+            top:0.4rem;
+            background: url(images/pos.png);
+            background-size: 100%;
+        }
+        .pos .mark{
+            height:0.65rem;
+            width:0.65rem;
+            position: absolute;
+            right:2.425rem;
+            top:0.4rem;
+            background: url(images/pos_06.png);
+            background-size: 100%;
+        }
+        .pos .pos-city{
+            position: absolute;
+            left:1.55rem;
+            top:0.4rem;
+        }
+        .city .hot{
+            height:1.5rem;
+            background: #eee;
+            color:#999;
+            padding-left:0.4rem;
+            font-size:0.65rem;
+            line-height: 1.5rem;
+
+        }
+        .city ul{
+
+        }
+        .city ul .last{
+            border:none;
+        }
+        .city ul li{
+            height:2.175rem;
+            padding-left:1.125rem;
+            background: #f8f8f8;
+            line-height: 2.175rem;
+            font-size:0.75rem;
+            border-bottom:1px solid #dedede;
+        }
+    </style>
+    <script>
+        var rem=20;
+        ;(function(win,doc){
+            rem=20/320*doc.documentElement.clientWidth;
+            doc.documentElement.style.fontSize=rem+'px';
+            win.addEventListener('resize',function(){
+                rem=20/320*doc.documentElement.clientWidth;
+                doc.documentElement.style.fontSize=rem+'px';//横屏的时候
+            },false);
+        })(window,document);
+    </script>
+</head>
+<body>
+    <section class="wrap">
+        <header>
+            <a href="javascript:;" class="back"><img src="images/back_03.png" alt=""></a>
+            <p class="title">切换城市</p>
+        </header>
+        <section class="pos">
+            <em class="icon"></em>
+            <div class="pos-city">当前位置-杭州</div>
+            <em class="mark"></em>
+        </section>
+        <section class="city">
+            <p class="hot">热门城市</p>
+            <ul>
+                <li>南京</li>
+                <li>福州</li>
+                <li>武汉</li>
+                <li class="last">天津</li>
+            </ul>
+            <p class="hot">A</p>
+            <ul>
+                <li>鞍山</li>
+                <li>安庆</li>
+                <li>澳门</li>
+            </ul>
+        </section>
+    </section>
+</body>
+</html>

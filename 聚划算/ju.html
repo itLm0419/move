@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <style>
+        .wrap{
+            height: 100%;
+            /*overflow: hidden;*/
+        }
+        .wrap header{
+            overflow: hidden;
+            width:16rem;
+            height: 2.5rem;
+            background: aqua;
+            position: relative;
+            background: url(images/bg1_03.png);
+        }
+        header .logo{
+            position: absolute;
+            left:50%;
+            top:50%;
+            width:3.7rem;
+            height:0.975rem;
+            margin-left:-1.85rem;
+            margin-top:-0.45rem;
+        }
+        header .sort{
+            position: absolute;
+            right:0.2rem;
+            top:0.5rem;
+            width:2.4rem;
+            height:1.4rem;
+        }
+        header .back{
+            position: absolute;
+            left:0.2rem;
+            top:0.5rem;
+            width:3.025rem;
+            height:0.15rem;
+        }
+        header .back img,header .sort img{
+            width: 100%;
+        }
+        nav ul{
+            width:16rem;
+            height:2rem;
+            border-bottom:1px solid #dcdcdc;
+        }
+        nav ul li{
+            width:3.95rem;
+            height:2rem;
+            border-left:1px solid #dcdcdc;
+        }
+        nav ul li a{
+            color:#999;
+            font-size:0.575rem;
+            text-align: center;
+            line-height: 2rem;
+            padding-left:1.5rem;
+        }
+        nav ul li .last{
+            padding-left:1.125rem;
+            color:#d51942;
+        }
+        header .title{
+            position: absolute;
+            left:50%;
+            top:50%;
+            font-size:0.775rem;
+            width:3.7rem;
+            height:0.975rem;
+            margin-left:-1.85rem;
+            margin-top:-0.45rem;
+        }
+        .banner{
+            width:16rem;
+            height:6.675rem;
+        }
+        .banner ul{
+            width:16rem;
+            height:5.7rem;
+        }
+        .banner ul li{
+            width:16rem;
+            height:5.7rem;
+        }
+        .banner ul li img{
+            width:100%;
+        }
+
+        .banner ol{
+            width:2.5rem;
+            height:0.975rem;
+            margin:0 auto;
+        }
+        .banner ol li{
+            margin: 0.375rem 0.15rem;
+            height:0.2rem;
+            width:0.2rem;
+            border-radius: 50%;
+            background: #ccc;
+            float: left;
+        }
+        .banner ol li.on{
+            background: #333;
+        }
+        .content ul li{
+            width:16rem;
+            height:3.975rem;
+            border-top:1px solid #dcdcdc;
+        }
+        .content ul li div{
+            float: left;
+        }
+        .content .j-icon{
+            height:2rem;
+            width:2rem;
+            margin:1rem 1.2rem 0 0.85rem;
+        }
+        .content .j-icon img{
+            height:2rem;
+            width:2rem;
+            background-size: 100%;
+        }
+        .content .arrow{
+            height:0.55rem;
+            width:0.325rem;
+            float: right;
+            margin:2rem 1rem 0 0;
+        }
+        .content .arrow img{
+            height:0.55rem;
+            width:0.325rem;
+            background-size: 100%;
+        }
+        .content .p1{
+            font-size:0.85rem;
+            font-weight:bold;
+            color:#6a237f;
+            margin:1rem 0 0.25rem 0;
+        }
+        .content .p3{
+            color: #9e5f44;
+        }
+        .content .p4{
+            color: #8db46d;
+        }
+        .content .p2{
+            font-size:0.575rem;
+            font-weight:bold;
+            color:#999;
+        }
+    </style>
+    <script>
+        var rem=20;
+        ;(function(win,doc){
+            rem=20/320*doc.documentElement.clientWidth;
+            doc.documentElement.style.fontSize=rem+'px';
+            win.addEventListener('resize',function(){
+                rem=20/320*doc.documentElement.clientWidth;
+                doc.documentElement.style.fontSize=rem+'px';//横屏的时候
+            },false);
+        })(window,document);
+    </script>
+</head>
+
+<body>
+<div class="wrap">
+    <header>
+        <a href="javascript:;" class="back"><img src="images/back_03.png" alt=""></a>
+        <p class="title">聚宝盆</p>
+        <a href="javascript:;" class="sort"><img src="images/sort_03.png" alt="" ></a>
+    </header>
+    <section>
+        <nav>
+            <ul class="clearfix">
+                <li class="fl"><a href="javascript:;" >商品</a></li>
+                <li class="fl"><a href="javascript:;" >生活</a></li>
+                <li class="fl"><a href="javascript:;">品牌</a></li>
+                <li class="fl"><a href="javascript:;" class="last">聚宝盆</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section class="banner">
+        <ul>
+            <li><img src="images/j-banner_03.png" alt=""></li>
+        </ul>
+        <ol class="clearfix">
+            <li class="on"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </section>
+    <section class="content">
+       <ul>
+           <li class="clearfix">
+               <div class="j-icon"><img src="images/j-icon_03.png" alt=""></div>
+               <div>
+                   <p class="p1">聚名品</p>
+                   <p class="p2">轻奢购物第一站</p>
+               </div>
+               <div class=" arrow"><img src="images/arrow2_06.png" alt=""></div>
+           </li>
+           <li class="clearfix">
+               <div class="j-icon"><img src="images/j-icon_06.png" alt=""></div>
+               <div>
+                   <p class="p1 p3">聚家装</p>
+                   <p class="p2">家装一起团 费用省一半！</p>
+               </div>
+               <div class=" arrow"><img src="images/arrow2_06.png" alt=""></div>
+           </li>
+           <li class="clearfix">
+               <div class="j-icon"><img src="images/j-icon_08.png" alt=""></div>
+               <div>
+                   <p class="p1 p4">聚 透</p>
+                   <p class="p2">每晚8点 预定明日商品</p>
+               </div>
+               <div class=" arrow"><img src="images/arrow2_06.png" alt=""></div>
+           </li>
+
+       </ul>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

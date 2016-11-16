@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <style>
+        .wrap{
+            height: 100%;
+            overflow: hidden;
+        }
+        .wrap header{
+            overflow: hidden;
+            width:16rem;
+            height: 2.5rem;
+            background: aqua;
+            position: relative;
+            background: url(images/bg1_03.png);
+        }
+        header .logo{
+            position: absolute;
+            left:50%;
+            top:50%;
+            width:3.7rem;
+            height:0.975rem;
+            margin-left:-1.85rem;
+            margin-top:-0.45rem;
+        }
+        header .sort{
+            position: absolute;
+            right:0.2rem;
+            top:0.5rem;
+            width:2.4rem;
+            height:1.4rem;
+        }
+        header .back{
+            position: absolute;
+            left:0.2rem;
+            top:0.5rem;
+            width:3.025rem;
+            height:0.15rem;
+        }
+        header .back img,header .sort img{
+            width: 100%;
+        }
+        nav ul{
+            width:16rem;
+            height:2rem;
+            border-bottom:1px solid #dcdcdc;
+        }
+        nav ul li{
+            width:3.95rem;
+            height:2rem;
+            border-left:1px solid #dcdcdc;
+        }
+        nav ul li a{
+            color:#999;
+            font-size:0.575rem;
+            text-align: center;
+            line-height: 2rem;
+            padding-left:1.5rem;
+        }
+        nav ul li .on{
+            color:#d51942;
+        }
+        nav ul li .last{
+            padding-left:1.125rem;
+        }
+        header .title{
+            position: absolute;
+            left:50%;
+            top:50%;
+            font-size:0.775rem;
+            width:3.7rem;
+            height:0.975rem;
+            margin-left:-1.85rem;
+            margin-top:-0.45rem;
+        }
+        .content ul{
+            width:16rem;
+        }
+        .content ul li{
+            height:3.975rem;
+            width:100%;
+            padding:0.5rem 1.2rem 0.5rem 0.5rem;
+            border-bottom:1px solid #dcdcdc;
+        }
+        .content ul li img{
+            width:100%;
+        }
+        .content ul li .egg,.buliding,.gas,.glass{
+            height: 3.6rem;
+            width:5.6rem;
+            padding:0.175rem;
+            border:1px solid #dcdcdc;
+        }
+         .detail{
+            width:7.575rem;
+            height: 100%;
+            padding-left:0.7rem;
+            padding-right:1.275rem;
+            font-size:0.65rem;
+            color:#000;
+        }
+         .detail p{
+            line-height: 1rem;
+        }
+         .detail div{
+            line-height: 1.2rem;
+        }
+        .content .show{
+            color:#c3213c;
+        }
+        .content .dec{
+            color:#999;
+            text-decoration: line-through;
+        }
+        .content .num{
+            color:#a5a5a5;
+        }
+        .content .detail .load{
+            width:2rem;
+            height: 0.75rem;
+        }
+        .content .detail .load img{
+            width:100%;
+        }
+    </style>
+    <script>
+        var rem=20;
+        ;(function(win,doc){
+            rem=20/320*doc.documentElement.clientWidth;
+            doc.documentElement.style.fontSize=rem+'px';
+            win.addEventListener('resize',function(){
+                rem=20/320*doc.documentElement.clientWidth;
+                doc.documentElement.style.fontSize=rem+'px';//横屏的时候
+            },false);
+        })(window,document);
+    </script>
+</head>
+
+<body>
+<div class="wrap">
+    <header>
+        <a href="javascript:;" class="back"><img src="images/back_03.png" alt=""></a>
+        <p class="title">生活团</p>
+        <a href="javascript:;" class="sort"><img src="images/sort_03.png" alt="" ></a>
+    </header>
+    <section>
+        <nav>
+            <ul class="clearfix">
+                <li class="fl"><a href="javascript:;" >商品</a></li>
+                <li class="fl"><a href="javascript:;" class="on">生活</a></li>
+                <li class="fl"><a href="javascript:;">品牌</a></li>
+                <li class="fl"><a href="javascript:;" class="last">聚宝盆</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section class="content">
+        <ul>
+            <li class="clearfix">
+                <div class="fl egg"><img src="images/live_03.png" alt="" ></div>
+                <div class="fl detail">
+                    <p>全网超级价，仅25.9元给市场价69元荣庆和正宗...</p>
+                    <div><span class="show">¥25.90</span><span class="dec">¥59.80</span></div>
+                    <p class="num">1240人已购买</p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="fl buliding"><img src="images/live_06.png" alt="" ></div>
+                <div class="fl detail">
+                    <p>香港九龙东智选假日酒店高级房1晚+2份自助早餐</p>
+                    <div><span class="show">¥770.00</span><span class="dec">¥3088.00</span></div>
+                    <p class="load"><img src="images/onload_03.png" alt=""></p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="fl gas"><img src="images/live_08.png" alt="" ></div>
+                <div class="fl detail">
+                    <p>最美新娘婚纱套餐：共12套服装变换美丽身姿搭...</p>
+                    <div><span class="show">¥2380.00</span><span class="dec">¥3304.00</span></div>
+                    <p class="num">140人已购买</p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="fl glass"><img src="images/live_10.png" alt="" ></div>
+                <div class="fl detail">
+                    <p>[厦门热恋] [厦门旺季双人自由行，前5名返]</p>
+                    <div><span class="show">¥1210.00</span><span class="dec">¥2234.00</span></div>
+                    <p class="num">1240人已购买</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

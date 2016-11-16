@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <style>
+        .wrap{
+            width: 100%;
+            background: #333;
+        }
+        header{
+            height:2.25rem;
+            position: relative;
+            border-bottom:2px solid #404040;
+        }
+        header .sort{
+            height:2.25rem;
+            width:5.8rem;
+            color:#fff;
+            position: absolute;
+            left:0.5rem;
+            top:0;
+            text-align: center;
+            border-bottom:0.1rem solid #fff;
+            line-height: 2.25rem;
+        }
+        header .zoom{
+            height:2.25rem;
+            width:5.8rem;
+            color:#fff;
+            position: absolute;
+            right:0.5rem;
+            top:0;
+            text-align: center;
+            line-height: 2.25rem;
+        }
+        .content ul{
+            width:6.125rem;
+            margin-top:1rem;
+        }
+        .content ul li{
+            height: 2.025rem;
+        }
+        .content ul li a{
+            color:#aaa;
+        }
+
+        .content ul:nth-child(1){
+            margin-left:1.525rem;
+        }
+    </style>
+    <script>
+        var rem=20;
+        ;(function(win,doc){
+            rem=20/320*doc.documentElement.clientWidth;
+            doc.documentElement.style.fontSize=rem+'px';
+            win.addEventListener('resize',function(){
+                rem=20/320*doc.documentElement.clientWidth;
+                doc.documentElement.style.fontSize=rem+'px';//横屏的时候
+            },false);
+        })(window,document);
+    </script>
+</head>
+<body>
+    <section class="wrap">
+        <header>
+            <div class="sort">分类</div>
+            <div class="zoom">地区</div>
+        </header>
+        <section class="content clearfix">
+            <ul class="fl">
+                <li><a href="javascript:;">全部</a></li>
+                <li><a href="javascript:;">美食</a></li>
+                <li><a href="javascript:;">休闲</a></li>
+                <li><a href="javascript:;">电影</a></li>
+                <li><a href="javascript:;">生活服务</a></li>
+                <li><a href="javascript:;">丽人</a></li>
+                <li><a href="javascript:;">卡券</a></li>
+                <li><a href="javascript:;">房产汽车</a></li>
+            </ul>
+            <ul class="fl">
+                <li><a href="javascript:;">摄影</a></li>
+                <li><a href="javascript:;">培训</a></li>
+                <li><a href="javascript:;">旅游</a></li>
+                <li><a href="javascript:;">酒店</a></li>
+                <li><a href="javascript:;">粮油生鲜</a></li>
+                <li><a href="javascript:;">汽车服务</a></li>
+                <li><a href="javascript:;">通讯</a></li>
+            </ul>
+        </section>
+    </section>
+</body>
+</html>

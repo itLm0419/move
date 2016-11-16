@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <style>
+        .wrap{
+            width: 100%;
+            background: #333;
+        }
+        header{
+            height:2.25rem;
+            position: relative;
+            border-bottom:2px solid #404040;
+        }
+
+        .content ul{
+            width:6.5rem;
+            margin-top:1rem;
+        }
+        header .sort{
+            height:2.25rem;
+            width:5.8rem;
+            color:#fff;
+            position: absolute;
+            left:0.5rem;
+            top:0;
+            text-align: center;
+            line-height: 2.25rem;
+        }
+        header .zoom{
+            height:2.25rem;
+            width:8rem;
+            color:#fff;
+            position: absolute;
+            right:0;
+            top:0;
+            text-align: center;
+            line-height: 2.25rem;
+            border-bottom:0.1rem solid #fff;
+        }
+        .content ul li{
+            height: 2.025rem;
+        }
+        .content ul li a{
+            color:#aaa;
+        }
+
+        .content ul:nth-child(1){
+            margin-left:1.525rem;
+        }
+    </style>
+    <script>
+        var rem=20;
+        ;(function(win,doc){
+            rem=20/320*doc.documentElement.clientWidth;
+            doc.documentElement.style.fontSize=rem+'px';
+            win.addEventListener('resize',function(){
+                rem=20/320*doc.documentElement.clientWidth;
+                doc.documentElement.style.fontSize=rem+'px';//横屏的时候
+            },false);
+        })(window,document);
+    </script>
+</head>
+<body>
+    <section class="wrap">
+        <header>
+            <div class="sort">分类</div>
+            <div class="zoom">地区</div>
+        </header>
+        <section class="content clearfix">
+            <ul class="fl">
+                <li><a href="javascript:;">杭州</a></li>
+                <li><a href="javascript:;">全部</a></li>
+                <li><a href="javascript:;">上城区</a></li>
+                <li><a href="javascript:;">下城区</a></li>
+                <li><a href="javascript:;">江干区</a></li>
+                <li><a href="javascript:;">拱墅区</a></li>
+                <li><a href="javascript:;">西湖区</a></li>
+                <li><a href="javascript:;">滨江区</a></li>
+                <li><a href="javascript:;">萧山区</a></li>
+                <li><a href="javascript:;">余杭区</a></li>
+            </ul>
+            <ul class="fl">
+                <li><a href="javascript:;">切换城市</a><em class="arrow"></em></li>
+                <li><a href="javascript:;">富阳市</a></li>
+                <li><a href="javascript:;">临安市</a></li>
+                <li><a href="javascript:;">桐庐县</a></li>
+                <li><a href="javascript:;">淳安县</a></li>
+                <li><a href="javascript:;">其他区</a></li>
+            </ul>
+        </section>
+    </section>
+</body>
+</html>

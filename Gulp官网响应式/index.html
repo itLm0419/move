@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="import.css">
+    <script>
+      window.onload=function(){
+           var oUp=document.getElementById('up');
+           var oBox=document.getElementById('nav');
+           var bOk=false;
+           oUp.onclick=function(){
+               if(!bOk){
+                   bOk=true;
+                   oBox.style.display='block';
+                   oBox.style.WebkitTranslation='1s all ease';
+               }else{
+                   oBox.style.display='none';
+                   bOk=false;
+               }
+           };
+       }
+    </script>
+</head>
+<body>
+    <section>
+        <header>
+            <div>Gulp 中文网</div>
+            <ul class="clearfix" id="nav">
+                <li><a href="javascript:;">首页</a></li>
+                <li><a href="javascript:;">中文文档</a></li>
+                <li><a href="javascript:;">入门指南</a></li>
+                <li><a href="javascript:;">API</a></li>
+                <li><a href="javascript:;">插件开发</a></li>
+                <li><a href="javascript:;">常见问题</a></li>
+                <li><a href="javascript:;">使用技巧</a></li>
+            </ul>
+            <a href="javascript:;" class="up" id="up"></a>
+        </header>
+        <section class="box">
+            <div class="banner">
+                <h1><img src="logo_03.png" alt=""></h1>
+                <div>用自动化构建工具增强你的工作流程！</div>
+                <a href="javascript:;">开始使用</a>
+            </div>
+        </section>
+    </section>
+<section class="content">
+    <ul class="clearfix">
+        <li class="l">
+            <h4>易于使用</h4>
+            <p>通过代码优于配置的策略，Gulp让简单的任务简单，复杂的任务可管理。</p>
+        </li>
+        <li>
+            <h4>构建快捷</h4>
+            <p>利用Node.js流的威力，你可以快捷构建项目并减少频繁的IO操作。</p>
+        </li>
+        <li class="l">
+            <h4>插件高质</h4>
+            <p>Gulp严格的插件指南确保插件如你期望的那样简洁高质得工作。</p>
+        </li>
+        <li>
+            <h4>易于学习</h4>
+            <p>通过最少的API，掌握Gulp毫不费力，构建工作尽在掌握:如同一系列流管道。</p>
+        </li>
+    </ul>
+</section>
+<footer>
+    <p class="copy">&copy;Gulp中文网 2015</p>
+    <p class="police">京ICP备11008151|京公网安备11010802014853</p>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
